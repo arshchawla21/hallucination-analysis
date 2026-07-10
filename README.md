@@ -9,9 +9,9 @@ and **entropy**,
 
 $$-\sum P(x_i)\log P(x_i)$$
 
-In simple terms, these measure How unexpected a single specific token was and the models total uncertainty.
+In simple terms, these measure _"how unexpected a single specific token was"_ and _"the models total uncertainty"_.
 
 ## Idea
-Prior work has explored the concept of identifying trends within these values in order to determine if an LLM is __hallucinating__. This is striking similar problem formulation of **algorthim trading**, and in fact all time series analysis problems. 
+Prior work has explored the concept of identifying trends within these values in order to determine if an LLM is __hallucinating__. This is striking similar to the problem formulation of **algorthim trading**, and all time series analysis problems. 
 
 In this work, we apply ideas from algorithmic trading in the hopes of identifing patterns in LLM uncertainty for hallucination detection.
