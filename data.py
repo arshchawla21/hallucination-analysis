@@ -7,7 +7,6 @@ from pathlib import Path
 from itertools import islice
 from datasets import load_dataset
 from client import generate, judge
-from utils import sys_prompt
 
 N = 100
 SAVE_PATH = Path("data/results.json")
