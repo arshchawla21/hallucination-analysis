@@ -1,0 +1,12 @@
+{
+  "signal": "relspike",
+  "objective": "auroc",
+  "space": {
+    "FEATURE": ["entropy", "surprisal"],
+    "N": [3, 5, 10],
+    "MIN_OBS": [2],
+    "FLOOR": [0.25, 0.5, 1.0],
+    "MODE": ["max", "ewma_final", "ewma_max"],
+    "ALPHA": [0.2, 0.35, 0.5]
+  }
+}

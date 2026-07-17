@@ -1,0 +1,10 @@
+{
+  "signal": "spike",
+  "objective": "auroc",
+  "space": {
+    "FEATURE": ["surprisal", "entropy"],
+    "THRESHOLD": {"low": 0.5, "high": 6.0, "step": 0.25},
+    "NORM": ["none", "sqrt", "len"],
+    "WEIGHTED": [false, true]
+  }
+}

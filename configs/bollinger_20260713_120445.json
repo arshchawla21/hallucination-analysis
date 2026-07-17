@@ -1,0 +1,74 @@
+{
+  "signal": "bollinger",
+  "params": {
+    "ENTRY_Z": 1.0,
+    "FEATURE": "entropy",
+    "MIN_OBS": 3,
+    "MIN_STD": 0.5,
+    "NORM": "sqrt",
+    "WEIGHTED": true,
+    "WINDOW": 10
+  },
+  "objective": "auroc",
+  "split": {
+    "test_frac": 0.3,
+    "seed": 0
+  },
+  "search": {
+    "space": {
+      "FEATURE": [
+        "surprisal",
+        "entropy"
+      ],
+      "WINDOW": [
+        5,
+        10,
+        20
+      ],
+      "MIN_OBS": [
+        3
+      ],
+      "ENTRY_Z": {
+        "low": 1.0,
+        "high": 3.0,
+        "step": 0.5
+      },
+      "MIN_STD": [
+        0.25,
+        0.5,
+        1.0
+      ],
+      "WEIGHTED": [
+        false,
+        true
+      ],
+      "NORM": [
+        "none",
+        "sqrt",
+        "len"
+      ]
+    },
+    "n_trials": null,
+    "seed": 0
+  },
+  "in_sample": {
+    "auroc": 0.7471295515677064,
+    "ap": 0.4150688116154252,
+    "f1": 0.5159235668789809,
+    "threshold": 0.6738347874270451,
+    "accuracy": 0.7241379310344828,
+    "base_rate": 0.20689655172413793,
+    "n": 551
+  },
+  "out_sample": {
+    "auroc": 0.6474164133738601,
+    "ap": 0.3291921520913242,
+    "f1": 0.41284403669724773,
+    "threshold": 0.19899722343030934,
+    "accuracy": 0.459915611814346,
+    "base_rate": 0.20675105485232068,
+    "n": 237
+  },
+  "data": "data/results.json",
+  "created": "20260713_120445"
+}

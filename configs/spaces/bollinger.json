@@ -1,0 +1,13 @@
+{
+  "signal": "bollinger",
+  "objective": "auroc",
+  "space": {
+    "FEATURE": ["surprisal", "entropy"],
+    "WINDOW": [5, 10, 15, 20],
+    "MIN_OBS": [2, 3, 5],
+    "ENTRY_Z": {"low": 0.5, "high": 3.0, "step": 0.5},
+    "MIN_STD": [0.25, 0.5, 1.0],
+    "WEIGHTED": [false, true],
+    "NORM": ["none", "sqrt", "len"]
+  }
+}

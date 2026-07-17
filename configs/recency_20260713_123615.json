@@ -1,0 +1,58 @@
+{
+  "signal": "recency",
+  "params": {
+    "ALPHA": 0.2,
+    "FEATURE": "entropy",
+    "FLOOR": 0.5
+  },
+  "objective": "auroc",
+  "split": {
+    "test_frac": 0.3,
+    "seed": 0
+  },
+  "search": {
+    "space": {
+      "FEATURE": [
+        "entropy",
+        "surprisal"
+      ],
+      "ALPHA": [
+        0.02,
+        0.05,
+        0.1,
+        0.2,
+        0.35,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "FLOOR": [
+        0.0,
+        0.5,
+        1.0
+      ]
+    },
+    "n_trials": null,
+    "seed": 0
+  },
+  "in_sample": {
+    "auroc": 0.7810329599743064,
+    "ap": 0.5031352701863464,
+    "f1": 0.5395348837209303,
+    "threshold": 0.2960808533301125,
+    "accuracy": 0.8203266787658802,
+    "base_rate": 0.20689655172413793,
+    "n": 551
+  },
+  "out_sample": {
+    "auroc": 0.7031046461137647,
+    "ap": 0.3934688211054659,
+    "f1": 0.46715328467153283,
+    "threshold": 0.13265342207261818,
+    "accuracy": 0.6919831223628692,
+    "base_rate": 0.20675105485232068,
+    "n": 237
+  },
+  "data": "data/results.json",
+  "created": "20260713_123615"
+}

@@ -1,0 +1,69 @@
+{
+  "signal": "relspike",
+  "params": {
+    "ALPHA": 0.2,
+    "FEATURE": "entropy",
+    "FLOOR": 1.0,
+    "MIN_OBS": 2,
+    "MODE": "ewma_final",
+    "N": 5
+  },
+  "objective": "auroc",
+  "split": {
+    "test_frac": 0.3,
+    "seed": 0
+  },
+  "search": {
+    "space": {
+      "FEATURE": [
+        "entropy",
+        "surprisal"
+      ],
+      "N": [
+        3,
+        5,
+        10
+      ],
+      "MIN_OBS": [
+        2
+      ],
+      "FLOOR": [
+        0.25,
+        0.5,
+        1.0
+      ],
+      "MODE": [
+        "max",
+        "ewma_final",
+        "ewma_max"
+      ],
+      "ALPHA": [
+        0.2,
+        0.35,
+        0.5
+      ]
+    },
+    "n_trials": null,
+    "seed": 0
+  },
+  "in_sample": {
+    "auroc": 0.7780922558111526,
+    "ap": 0.5003844828923654,
+    "f1": 0.53156146179402,
+    "threshold": 0.40542924992422175,
+    "accuracy": 0.7441016333938294,
+    "base_rate": 0.20689655172413793,
+    "n": 551
+  },
+  "out_sample": {
+    "auroc": 0.6841076856274425,
+    "ap": 0.34914013709362457,
+    "f1": 0.4634146341463415,
+    "threshold": 0.2807413512656524,
+    "accuracy": 0.6286919831223629,
+    "base_rate": 0.20675105485232068,
+    "n": 237
+  },
+  "data": "data/results.json",
+  "created": "20260713_131535"
+}

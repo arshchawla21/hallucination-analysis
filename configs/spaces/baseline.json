@@ -1,0 +1,8 @@
+{
+  "signal": "baseline",
+  "objective": "auroc",
+  "space": {
+    "FEATURE": ["surprisal", "entropy"],
+    "STAT": ["mean", "max", "sum", "last"]
+  }
+}
