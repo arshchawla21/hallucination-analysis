@@ -8,7 +8,7 @@ from itertools import islice
 from datasets import load_dataset
 from client import generate, judge
 
-N = 100
+N = 1000
 SAVE_PATH = Path("data/results.json")
 
 # Load previous progress
