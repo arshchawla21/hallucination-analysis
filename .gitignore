@@ -10,3 +10,6 @@ wheels/
 .venv
 .env
 data
+
+# Backtest artifacts
+reports/
